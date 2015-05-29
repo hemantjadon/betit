@@ -14,7 +14,7 @@ class BetitUser(AbstractUser):
 
 class UserProfile(models.Model):
     user=models.OneToOneField(BetitUser)
-    phone_no=models.CharField(max_length=15,null=False)  #Take Phone Number Field
+    phone_num=models.CharField(max_length=15,null=False)  #Take Phone Number Field
     image=models.ImageField(upload_to = 'profile_pics/',blank = True) # FK to user model
     
 #### Hash Tags Model ####
